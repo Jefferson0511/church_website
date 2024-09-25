@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 html,
 body {
     font-family: 'Roboto', sans-serif; 
@@ -25,6 +29,7 @@ footer {
 
 /* Transparent header for homepage */
 .header-transparent {
+    font-family: "Josefin Sans", sans-serif;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,8 +51,8 @@ footer {
 
 /* Regular header for other pages */
 header {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #CDC1FF;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #E5D9F2;
     color: #A594F9;
     text-align: center;
     font-size: medium;

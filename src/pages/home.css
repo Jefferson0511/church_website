@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 .home-main {
-    font-family:Georgia, 'Times New Roman', Times, serif ;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: "Josefin Sans", sans-serif;
     position: relative;
     height: 100vh;
     margin: 0;
@@ -70,66 +73,9 @@ video {
 }
 
 .welcome-message p {
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.5em;
     margin-top: 0.5em; /* Add some spacing between the h1 and p */
     color: #E5D9F2;
     text-shadow: 1px 1px 3px rgb(165, 148, 249,0.5);
 }
-
-/* .welcome-message h1 {
-    font-size: 3em;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    top: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #EBD3F8;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-.welcome-message p {
-    position: absolute;
-    font-size: 1.5em;
-    color: #EBD3F8;
-    text-shadow: 1px 1px 3px #2E073F;
-} */
-
-/* .verse-strip {
-    position: relative;
-    background-color: #745E96;
-    color: white;
-    text-align: center;
-    padding: 1% 0;
-    font-size: 1.2em;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    top: 58%;
-    right: 23%;
-}
-
-.verse-strip p {
-    display: inline-block;
-    animation: slide-in 20s linear infinite;
-    padding-left: 100%;
-    white-space: nowrap;
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translateX(100%);
-    }
-
-    50% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
