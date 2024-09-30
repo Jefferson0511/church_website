@@ -25,7 +25,7 @@ function App() {
           <Route path="/construction" element={<Construction />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/fellowship" element={<Fellowship />} />
+          <Route path="/the-fellowship" element={<Fellowship />} />
         </Routes>
         {/* <Footer /> */}
       </div>

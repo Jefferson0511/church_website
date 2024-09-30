@@ -24,7 +24,7 @@ const Home = () => {
     <main className="construction-home-main">
       <div className="overlay"></div>
       <div className="construction-welcome-message">
-        <h1>Payments</h1>
+        <h1>Media</h1>
         <h2>Faith. Community. Service</h2>
       </div>
       {/* <div className="verse-strip">

@@ -1,0 +1,181 @@
+/* Fellowship Main Section */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.fellowship-main {
+    position: relative;
+    height: 92.3vh; /* Full height of the viewport */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #2E073F; /* Background color */
+    z-index: 1; /* Set a z-index to keep it behind the overlay */
+}
+
+/* Overlay for Fellowship */
+.fellowship-overlay {
+    position: fixed; /* Fixed positioning to stay in place when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Semi-transparent overlay */
+    z-index: 0; /* High z-index to ensure it stays on top */
+}
+
+/* Welcome Message */
+.fellowship-welcome-message {
+    position: relative; /* Relative to keep it above the overlay */
+    top: 2%; /* Aligns the message to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the message horizontally */
+    width: 100%;
+    padding: 1em; /* Add padding if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    z-index: 2; /* Ensure this stays above the overlay */
+    text-align: center;
+}
+
+/* Styles for the welcome message */
+.fellowship-welcome-message h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3em;
+    margin: 0; /* Remove any default margin */
+    color: #EBD3F8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fellowship-welcome-message h2 {
+    font-size: 2em;
+    margin: 0;
+    margin-top: 7%;
+    color: #EBD3F8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fellowship-welcome-message p {
+    font-family:sans-serif;
+    text-align: justify;
+    font-size: 1.15em;
+    margin-left: 13%;
+    margin-right: 13%;
+    /* margin-top: 0.5em; */
+    color: #EBD3F8;
+    padding: 1em;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-radius: 8px;
+    /* text-shadow: 1px 1px 3px #2E073F; */
+}
+
+/* Flip Card Container */
+.flip-card-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 6%; /* Space between cards */
+    row-gap: 10%;
+    padding-left: 6%; /* Padding around the grid */
+    padding-right: 6%; /* Padding around the grid */
+    padding-bottom: 20%; /* Padding around the grid */
+    z-index: 2; /* Ensure it stays above the overlay */
+}
+
+/* Flip Card Styles */
+.flip-card {
+    width: 100%; /* Full width of the grid cell */
+    height: 300px; /* Fixed height */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
+}
+
+/* Flipped state */
+.flip-card-inner.flipped {
+    transform: rotateY(180deg); /* Rotate on flip */
+}
+
+/* Front and Back Faces */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when not flipped */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* padding: 1em; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Front Side of the Card */
+.flip-card-front {
+    /* background-image: url('../../public/images/1.jpg');  */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Back Side of the Card */
+.flip-card-back {
+    /* background-image: url('../../public/images/2.png');  */
+    background-position: center;
+    transform: rotateY(180deg); /* Rotate the back to start hidden */
+}
+
+/* Optional styling for text on cards */
+.flip-card-front h3,
+.flip-card-back h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    margin-top:5%;
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.flip-card-front p,
+.flip-card-back p {
+    font-size: 1em;
+    margin-top: 1em;
+    text-align: left;
+    padding:0 3em;
+    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+}
+
+.flip-card-title {
+    font-family: "Josefin Sans", sans-serif;
+  text-align: center; /* Center the title */
+  font-size: 1.7em; /* Adjust the size as needed */
+  margin-bottom: 2%; /* Space between title and card */
+  color: #EBD3F8; /* Match this to your color theme */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
+.flip-card-back {
+    transform: rotateY(180deg); /* Rotate the back to start hidden */
+}
+
+/* Smoother transition for the flip */
+.flip-card-inner {
+    transition: transform 0.8s ease-in-out; /* Increase duration and apply easing */
+}
+
+/* Add smooth transitions for other properties like opacity */
+.flip-card-front, .flip-card-back {
+    transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity changes */
+}
