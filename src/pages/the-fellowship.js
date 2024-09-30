@@ -94,8 +94,8 @@ const Fellowship = () => {
                 className="flip-card-front"
                 style={{ backgroundImage: `url(${card.frontImage})` }}
               >
-                <h3>{card.front}</h3>
-                <p>Click to Flip</p>
+                {/* <h3>{card.front}</h3> */}
+                {/* <p>Click to Flip</p> */}
               </div>
               <div
                 className="flip-card-back"
