@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./construction.css"; // Separate CSS for Home
+import "./payments.css"; // Separate CSS for Home
+import qrCode from "../assets/sampleQRCode.png"
 
 const bibleVerses = [
   "John 3:16 - For God so loved the world...",
@@ -21,16 +22,35 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="construction-home-main">
-      <div className="overlay"></div>
-      <div className="construction-welcome-message">
-        <h1>Payments</h1>
-        <h2>Faith. Community. Service</h2>
+    <div className="paymentsPageWrapper">
+      <div className="paymentsHeader">
+        <h1>Donate</h1>
+        <h2>God loves a <span id="highlight">cheerful</span> giver</h2>
       </div>
-      {/* <div className="verse-strip">
-        <p>{bibleVerses[currentVerse]}</p>
-      </div> */}
-    </main>
+      <div className="paymentsBody">
+        <div className="bankSection">
+            <h3>Bank Details</h3>
+            <br></br>
+            <hr></hr>
+            <br></br>
+            <p>C.S.I. St. Matthew's Church</p>
+            <p>HDFC Bank</p>
+            <p>Account Number: 12345678xx</p>
+            <p>Selaiyur, East Tambaram</p>
+            <p>Chennai, Tamil Nadu, India</p>
+            <br></br>
+        </div>
+        <div className="qrCodeSection">
+            <h3>UPI QR Code</h3>
+            <br></br>
+            <hr></hr>
+            <br></br>
+            <img width="50%" height="70%" src={qrCode} alt="QR Code" />
+            <br></br>
+        </div>
+    </div>
+
+    </div>
   );
 };
 

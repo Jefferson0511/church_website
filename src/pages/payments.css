@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Background Gradient for the entire page */
+.paymentsPageWrapper {
+    height: -150vh; /* Ensure it covers the full viewport height */
+    background: linear-gradient(to right, #1A1A1A, #4B0082);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient for h1 and h2 */
+.paymentsHeader h1, 
+.paymentsHeader h2 {
+    /* background: linear-gradient(to right, #FF7F50, #FF1493); */
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */
+}
+
+#highlight {
+    background: linear-gradient(to right, #FF7F50, #FF1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 20rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+.paymentsBody {
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+    /* background: linear-gradient(to right, #FF7F50, #FF1493); */
+    border-radius: 3rem;
+    padding: 2rem; /* Add padding for better spacing */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    width: 80rem;
+}
+
+.bankSection {
+    flex: 1; /* Allow both sections to grow equally */
+    margin: 1rem; /* Add margin for spacing */
+    min-width: 30rem; /* Minimum width for responsiveness */
+    max-width: 40rem; /* Maximum width for better layout */
+    background: white; /* Background for better contrast */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Padding inside the sections */
+    text-align: center;
+}
+
+.qrCodeSection {
+    flex: 1; /* Allow both sections to grow equally */
+    margin: 1rem; /* Add margin for spacing */
+    min-width: 30rem; /* Minimum width for responsiveness */
+    max-width: 40rem; /* Maximum width for better layout */
+    background: white; /* Background for better contrast */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Padding inside the sections */
+    text-align: center;
+}
+
+h3 {
+    text-align: center; /* Center align headers */
+    margin-bottom: 1rem; /* Space below headers */
+    font-size: 2rem;
+}
+
+.bankSection p {
+    font-size: 1.5rem;
+}
