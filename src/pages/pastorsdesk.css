@@ -6,16 +6,16 @@
 .pastor-main {
     position: absolute;
     font-family: "Josefin Sans", sans-serif;
-    height: 92vh;
+    height: 150%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #F5EFFF;
+    background: linear-gradient(to right, #1A1A1A, #4B0082);
     /* background-color: #697565;
     /* background: url('../../public/images/5.png') no-repeat top center/cover; */ 
     background-size: cover;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* .pastor-overlay {
@@ -28,33 +28,30 @@
     z-index: 2;
 } */
 
-.pastor-welcome-message {
-    position: absolute;
-    top: 2%; /* Aligns the message to the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the message horizontally */
-    width: 100%;
-    padding: 1em; /* Add padding if needed */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    z-index: 2;
-    text-align: center;
+
+
+.head h1 {
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+.head h2 {
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */
+    font-size: 2rem;
 }
 
-.pastor-welcome-message h1 {
-    font-size: 3em;
-    margin: 0; /* Remove any default margin to avoid unnecessary spacing */
-    color: #674188;
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
-}
-.pastor-welcome-message h2 {
-    font-size: 2em;
-    
-    margin: 0; /* Remove any default margin to avoid unnecessary spacing */
-    padding-top: 3%;
-    color: #674188;
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+#highlight {
+    background: linear-gradient(to right, #FF7F50, #FF1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pastor-welcome-message p {
@@ -63,15 +60,47 @@
   font-weight: 600;
   font-style: normal;
     text-align: justify;
-    font-size: 1.05em;
-    margin: 13%;
+    font-size: 1.3rem;
+    /* margin: 13%; */
     margin-top: 0.5em;
-    color: #674188;
     padding: 1em;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    border-radius: 8px;
-    /* text-shadow: 1px 1px 3px #2E073F; */
 }
+
+.pastor-welcome-message {
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+    /* background: linear-gradient(to right, #FF7F50, #FF1493); */
+    border-radius: 3rem;
+    padding: 2rem; /* Add padding for better spacing */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    width: 100%;
+}
+
+.pastorPhoto {
+    flex: 1; /* Allow both sections to grow equally */
+    margin: 1rem; /* Add margin for spacing */
+    min-width: 10rem; /* Minimum width for responsiveness */
+    max-width: 20rem; /* Maximum width for better layout */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Padding inside the sections */
+    text-align: center;
+}
+
+.pastorMessage {
+    flex: 1; /* Allow both sections to grow equally */
+    margin: 1rem; /* Add margin for spacing */
+    min-width: 30rem; /* Minimum width for responsiveness */
+    max-width: 40rem; /* Maximum width for better layout */
+    background: white; /* Background for better contrast */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Padding inside the sections */
+    text-align: center;
+}
+
+
+
+
 .gowun-batang-bold {
   font-family: "Gowun Batang", serif;
   font-weight: 700;

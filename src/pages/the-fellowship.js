@@ -110,6 +110,7 @@ const Fellowship = () => {
       <div className="fellowship-overlay"></div>
       <div className="fellowship-welcome-message">
         <h1>Fellowship</h1>
+        <h2>who has called you into <span id="highlight">fellowship</span> with his Son</h2>
         <p>
           Write up about fellowshipsWrite up about fellowshipsWrite up about
           fellowships Write up about fellowships Write up about fellowships

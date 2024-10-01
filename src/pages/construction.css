@@ -1,62 +1,38 @@
-.construction-home-main {
-    position: absolute;
-    height: 84vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #2E073F;
-    /* background: url('../../public/images/5.png') no-repeat top center/cover; */
-    background-size: cover;
-    z-index: 1;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: "Josefin Sans", sans-serif;
 }
 
-.construction-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: 2;
-}
-
-.construction-welcome-message {
-    position: absolute;
-    top: 2%; /* Aligns the message to the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the message horizontally */
-    width: 100%;
-    padding: 1em; /* Add padding if needed */
+.constructionPageWrapper {
+    height: 95vh; /* Ensure it covers the full viewport height */
+    background: linear-gradient(to right, #1A1A1A, #4B0082);
+    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    z-index: 2;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.construction-welcome-message h1 {
-    font-size: 3em;
-    margin: 0; /* Remove any default margin to avoid unnecessary spacing */
-    color: #EBD3F8;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-.construction-welcome-message h2 {
-    font-size: 2em;
-    margin: 0; /* Remove any default margin to avoid unnecessary spacing */
-    margin-top: 7%;
-    color: #EBD3F8;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+.constructionHeader h1,
+.constructionHeader h2 {
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */;
 }
 
-.construction-welcome-message p {
-    text-align: justify;
-    font-size: 1.15em;
-    margin: 13%;
-    margin-top: 0.5em;
-    color: #EBD3F8;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
-    border-radius: 8px;
-    text-shadow: 1px 1px 3px #2E073F;
+.constructionHeader h1 {
+    font-size: 3rem;
+}
+
+.constructionHeader h2 {
+    font-size: 2rem;
+}
+
+#highlight {
+    background: linear-gradient(to right, #FF7F50, #FF1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

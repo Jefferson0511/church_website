@@ -43,7 +43,12 @@ const Media = () => {
 
   return (
     <div className="media-container">
-      <h1 className="media-title">Media Gallery</h1>
+
+      <div className="mediaHeader">
+        <h1>Media Gallery</h1>
+        <h2>I thank my God in all my <span id="highlight">remembrance</span> of you</h2>
+      </div>
+      
       <div className="gallery-grid">
         {galleryData.map((item, index) => (
           <div key={index} className="gallery-item">
