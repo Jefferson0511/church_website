@@ -1,11 +1,40 @@
 /* Container for the entire media page */
 .media-container {
-  padding: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #f3e6ff, #d9c7ff); /* Light lavender to soft purple gradient */
-  border-radius: 15px;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  background: linear-gradient(to right, #1A1A1A, #4B0082);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.mediaHeader h1,
+.mediaHeader h2 {
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */
+}
+
+.mediaHeader h1 {
+  font-size: 3rem;
+  margin-top: -1rem;
+}
+
+.mediaHeader h2 {
+  font-size: 2rem;
+}
+
+
+
+#highlight {
+  background: linear-gradient(to right, #FF7F50, #FF1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* Title of the media gallery */
 .media-title {

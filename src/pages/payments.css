@@ -6,7 +6,7 @@ body {
 
 /* Background Gradient for the entire page */
 .paymentsPageWrapper {
-    height: -150vh; /* Ensure it covers the full viewport height */
+    height: 95vh; /* Ensure it covers the full viewport height */
     background: linear-gradient(to right, #1A1A1A, #4B0082);
     background-color: white;
     display: flex;
@@ -33,12 +33,12 @@ body {
 }
 
 h1 {
-    font-size: 20rem;
+    font-size: 3rem;
     font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 2rem;
     color: white;
 }
 
