@@ -1,0 +1,94 @@
+/* Container for the entire media page */
+.media-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f3e6ff, #d9c7ff); /* Light lavender to soft purple gradient */
+  border-radius: 15px;
+}
+
+/* Title of the media gallery */
+.media-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #5a3e95; /* Deep lavender/purple for contrast */
+}
+
+/* Grid layout for gallery items */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Each gallery item container */
+.gallery-item {
+  background-color: #f4eaff; /* Very light lavender for card background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(150, 120, 200, 0.2); /* Subtle lavender shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(150, 120, 200, 0.4); /* Stronger shadow on hover */
+}
+
+/* Styling for images */
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #d6bee6; /* Lavender border below the image */
+}
+
+/* Information under each image */
+.gallery-info {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title of the event */
+.gallery-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5a3e95; /* Deep lavender/purple for text */
+}
+
+/* Description of the event */
+.gallery-description {
+  font-size: 1em;
+  color: #836fa9; /* Softer lavender for description */
+}
+
+/* Responsive design: Adjusts for smaller screens */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .gallery-image {
+    height: 180px;
+  }
+
+  .gallery-info {
+    padding: 15px;
+  }
+
+  .gallery-title {
+    font-size: 1.2em;
+  }
+
+  .gallery-description {
+    font-size: 0.9em;
+  }
+}
+
+/* Scrollbar styling (optional) */
+body {
+  scrollbar-color: #d6bee6 #f7f0ff; /* Lavender scrollbar */
+}

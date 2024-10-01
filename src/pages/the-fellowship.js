@@ -5,7 +5,6 @@ const Fellowship = () => {
   // State to track which card is flipped
   const [flippedCard, setFlippedCard] = useState(null);
 
-  // Dummy data for flip cards including background images
   const cardData = [
     {
       title: "Women's Fellowship", // New title property
@@ -16,6 +15,11 @@ const Fellowship = () => {
       president: "President- Mrs. Sheeba Salomon",
       seceretary: "Secretary: Mrs.G.Angel Nesan",
       treasurer: "Treasruer: Mrs.A.Angel Mary Ashok",
+      people: [
+        { name: "Ruth Gnana Deepa", image: "/images/w1.jpg" },
+        { name: "Chandra Samson", image: "/images/w2.jpeg" },
+        { name: "Hilda Devaraj", image: "/images/w3.jpg" },
+      ],
     },
     {
       title: "Men's Fellowship",
@@ -25,6 +29,10 @@ const Fellowship = () => {
       backImage: "/images/1.jpg",
       president: "Chairman- Rev.S.Salomon Soundara Dass",
       seceretary: "In charges- Mr.P.Asvinkumar and Mr.D.Rajkumar Davidson",
+      people: [
+        { name: "Secretary: J.Samson Kirubakaran", image: "/images/m1.jpg" },
+        { name: "Treasurer: A.B. Johnson Thiruvengadam", image: "/images/m2.jpg" },
+      ],
     },
     {
       title: "Sunday School",
@@ -32,6 +40,10 @@ const Fellowship = () => {
       back: "Incharges",
       frontImage: "/images/1.jpg",
       backImage: "/images/1.jpg",
+      people: [
+        { name: "Samson", image: "/images/m1.jpg" },
+        { name: "Johnson", image: "/images/m2.jpg" },
+      ],
     },
     {
       title: "Youth Fellowship",
@@ -42,6 +54,11 @@ const Fellowship = () => {
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "Boys : Presbyter In-charge",
       treasurer: "Girls : Iyyar Amma",
+      people: [
+        { name: "Youth Leader: Dr. Devasitham", image: "/images/y1.jpg" },
+        { name: "Secretary: J.Jeya Rueben", image: "/images/y1.jpg" },
+        { name: "Treasurer: Daphne", image: "/images/y1.jpg" },
+      ],
     },
     {
       title: "Tamil Choir",
@@ -51,6 +68,7 @@ const Fellowship = () => {
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "Mr.A.Wesley John - Tamil Choir Admin",
+      people: [{ name: "Wesley John", image: "/images/t1.jpg" }],
     },
     {
       title: "English Choir",
@@ -60,6 +78,29 @@ const Fellowship = () => {
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "In Charge - Dr.J.Reeves Wesley",
+    },
+
+    {
+      title: "Evangelism",
+      front: "Front Content 6",
+      back: "Incharges",
+      frontImage: "/images/1.jpg",
+      backImage: "/images/1.jpg",
+      president: "Chairman - Rev.S.Salomon Soundara Dass",
+      seceretary: "In Charge - Dr.J.Reeves Wesley",
+    },
+    {
+      title: "Elder's Fellowship",
+      front: "Front Content 6",
+      back: "Incharges",
+      frontImage: "/images/1.jpg",
+      backImage: "/images/1.jpg",
+      president: "Chairman - Rev.S.Salomon Soundara Dass",
+      seceretary: "In Charge - Dr.J.Reeves Wesley",
+      people: [
+        { name: "Secretary: D. Rajkumar Davidson", image: "/images/e1.jpg" },
+        { name: "Treasurer: S. Stepher Nicholas", image: "/images/e2.jpg" },
+      ],
     },
   ];
 
@@ -84,7 +125,6 @@ const Fellowship = () => {
         {cardData.map((card, index) => (
           <div key={index} className="flip-card">
             <h4 className="flip-card-title">{card.title}</h4>{" "}
-            {/* Title for each card */}
             <div
               className={`flip-card-inner ${
                 flippedCard === index ? "flipped" : ""
@@ -102,9 +142,21 @@ const Fellowship = () => {
                 style={{ backgroundColor: "#F5EFFF" }}
               >
                 <h3>{card.back}</h3>
-                <p>{card.president}</p>
-                <p>{card.seceretary}</p>
-                <p>{card.treasurer}</p>
+                <div className="people-grid">
+                  {card.people &&
+                    card.people.map((person, i) => (
+                      <div key={i} className="person-card">
+                        <img src={person.image} alt={person.name} />
+                        <p>
+                          <b className="p-head">
+                            {person.name.split(": ")[0]}
+                          </b>
+                        </p>{" "}
+                        {/* Title in bold */}
+                        <p>{person.name.split(": ")[1]}</p>
+                      </div>
+                    ))}
+                </div>
               </div>
             </div>
           </div>
