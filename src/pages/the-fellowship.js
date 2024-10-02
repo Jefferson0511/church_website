@@ -107,7 +107,7 @@ const Fellowship = () => {
 
   return (
     <main className="fellowship-main">
-      <div className="fellowship-overlay"></div>
+      {/* <div className="fellowship-overlay"></div> */}
       <div className="fellowship-welcome-message">
         <h1>Fellowship</h1>
         <h2>who has called you into <span id="highlight">fellowship</span> with his Son</h2>

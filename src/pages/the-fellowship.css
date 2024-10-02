@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
 .fellowship-main {
     position: relative;
     height: 92.3vh; /* Full height of the viewport */
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: auto;
+    /* overflow: hidden; */
     overflow-x: hidden;
     background: linear-gradient(to right, #1A1A1A, #4B0082);
     z-index: 1; /* Set a z-index to keep it behind the overlay */
@@ -35,6 +36,7 @@
     align-items: center; /* Center align items horizontally */
     z-index: 2; /* Ensure this stays above the overlay */
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* Styles for the welcome message */

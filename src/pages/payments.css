@@ -6,7 +6,7 @@ body {
 
 /* Background Gradient for the entire page */
 .paymentsPageWrapper {
-    height: 95vh; /* Ensure it covers the full viewport height */
+    height: 117vh; /* Ensure it covers the full viewport height */
     background: linear-gradient(to right, #1A1A1A, #4B0082);
     background-color: white;
     display: flex;

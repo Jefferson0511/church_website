@@ -7,12 +7,16 @@ const PastorsDesk = () => {
       {/* <div className="pastor-overlay"></div> */}
       <div className="head">
         <h1>Pastor's Desk</h1>
-        <h2>Good news of <span id="highlight">great joy</span> to all</h2>
+        <h2>
+          Good news of <span id="highlight">great joy</span> to all
+        </h2>
       </div>
       <div className="pastor-welcome-message">
-
         <div className="pastorPhoto">
-          <img src="" alt="Photo of the Pastor"></img>
+          <img
+            src="images\p1.jpeg"
+            alt="Photo of the Pastor"
+          ></img>
         </div>
         <div className="pastorMessage">
           <p>
@@ -31,21 +35,21 @@ const PastorsDesk = () => {
             The shepherds oppressed people of the society, the Wiseman upper
             class of the society (in those days) visited and saw the Birth of
             Jesus and returned with great joy (Matt. 2:10, Lk. 2:20). Here, all
-            the people of society (rich and poor) receive the great joy and share
-            the same to others while returning.
+            the people of society (rich and poor) receive the great joy and
+            share the same to others while returning.
             <br />
             <br />
-            Yes, due to pandemic situation we are also living with death fear, our
-            livelihood would also under threat. But the Birth of Jesus brings
-            great hope and joy to our present and future like shepherd and Wiseman
-            receives great shining light and also we called to share the same joy
-            with others in this season.
+            Yes, due to pandemic situation we are also living with death fear,
+            our livelihood would also under threat. But the Birth of Jesus
+            brings great hope and joy to our present and future like shepherd
+            and Wiseman receives great shining light and also we called to share
+            the same joy with others in this season.
             <br />
             <br />
             May the birth of Jesus bring the bright future, fearless life and
-            great joy to all the people of God in this world. Hence, we called to
-            celebrate the Christmas 2020 and New Year 2021 with all the happiness
-            in Christ.
+            great joy to all the people of God in this world. Hence, we called
+            to celebrate the Christmas 2020 and New Year 2021 with all the
+            happiness in Christ.
           </p>
         </div>
       </div>
