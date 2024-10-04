@@ -5,7 +5,7 @@ body {
 }
 
 .constructionPageWrapper {
-    height: 90vh; /* Ensure it covers the full viewport height */
+    height: 92.4vh; /* Ensure it covers the full viewport height */
     background: linear-gradient(to right, #1A1A1A, #4B0082);
     background-color: white;
     display: flex;

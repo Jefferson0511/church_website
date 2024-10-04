@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/header"; // Your updated Header with responsive menu
+import Footer from "./components/footer"; // Optional Footer
 import Home from "./pages/home";
 import Aboutus from "./pages/aboutus";
 import Pastorsdesk from "./pages/pastorsdesk";
@@ -10,14 +10,13 @@ import Payments from "./pages/payments";
 import Media from "./pages/media";
 import Fellowship from "./pages/the-fellowship";
 
-import './styles/global.css';
+import "./styles/global.css"; // Ensure your global CSS is imported for styling
 
 function App() {
-  // const location = useLocation();
   return (
     <Router>
       <div className="container">
-        <Header />
+        <Header /> {/* This contains the responsive navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -27,6 +26,7 @@ function App() {
           <Route path="/media" element={<Media />} />
           <Route path="/the-fellowship" element={<Fellowship />} />
         </Routes>
+        {/* Optional Footer if needed */}
         {/* <Footer /> */}
       </div>
     </Router>

@@ -34,7 +34,7 @@ const Home = () => {
             <hr></hr>
             <br></br>
             <p>C.S.I. St. Matthew's Church</p>
-            <p>HDFC Bank</p>
+            <p>Union Bank</p>
             <p>Account Number: 12345678xx</p>
             <p>Selaiyur, East Tambaram</p>
             <p>Chennai, Tamil Nadu, India</p>
