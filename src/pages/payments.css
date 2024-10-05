@@ -75,7 +75,7 @@ h3 {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .paymentsPageWrapper{
-        height: 87vh;
+        height: 92vh;
     }
     .paymentsBody {
         flex-direction: column; /* Stack sections vertically on smaller screens */

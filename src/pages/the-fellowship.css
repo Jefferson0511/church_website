@@ -1,40 +1,34 @@
 /* Fellowship Main Section */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
 
 .fellowship-main {
     position: relative;
-    height: 92.3vh; /* Full height of the viewport */
+    height: 92.3vh;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     overflow-x: hidden;
     background: linear-gradient(to right, #1A1A1A, #4B0082);
-    z-index: 1; /* Set a z-index to keep it behind the overlay */
+    z-index: 1;
 }
 
 #highlight {
     background: linear-gradient(to right, #FF7F50, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-/* Overlay for Fellowship */
+}
 
-
-/* Welcome Message */
 .fellowship-welcome-message {
-    position: relative; /* Relative to keep it above the overlay */
-    top: 2%; /* Aligns the message to the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the message horizontally */
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    z-index: 2; /* Ensure this stays above the overlay */
+    align-items: center;
+    z-index: 2;
     text-align: center;
     overflow-x: hidden;
 }
@@ -43,10 +37,9 @@
 .fellowship-welcome-message h1, h2 {
     font-family: "Josefin Sans", sans-serif;
     background: linear-gradient(to right, #C8A1E0, #F5EFFF);
-    -webkit-background-clip: text; /* For Safari */
-    -webkit-text-fill-color: transparent; /* For Safari */
-    color: transparent; /* Fallback for other browsers */
-    text-align: center; /* Center align text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .fellowship-welcome-message h1 {
@@ -59,59 +52,51 @@
 
 .fellowship-welcome-message p {
     font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-weight: 500;
+    font-style: normal;
     text-align: justify;
     font-size: 1.15em;
     margin-left: 13%;
     margin-right: 13%;
-    /* margin-top: 0.5em; */
     color: #EBD3F8;
     padding: 1em;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     border-radius: 8px;
-    /* text-shadow: 1px 1px 3px #2E073F; */
 }
 
 /* Flip Card Container */
-/* Flip Card Container */
+/* Flip Card Hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
 .flip-card-container {
     display: grid; /* Use CSS Grid for layout */
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    grid-template-rows: repeat(6, 1fr); /* 4 rows */
     gap: 6%; /* Space between cards */
     row-gap: 10%; /* Space between rows */
     padding-left: 6%; /* Padding around the grid */
     padding-right: 6%; /* Padding around the grid */
-    margin-bottom: 32%;
+    margin-bottom: 6%;
     z-index: 2; /* Ensure it stays above the overlay */
 }
 
-
-/* Flip Card Styles */
+/* Flip Card */
 .flip-card {
     width: 100%; /* Full width of the grid cell */
     height: 300px; /* Fixed height */
     perspective: 1000px; /* Perspective for 3D effect */
 }
 
-/* Flip Card Inner */
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.6s;
+    transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d; /* Ensure 3D transformation is preserved */
 }
 
-/* Flipped state */
-.flip-card-inner.flipped {
-    transform: rotateY(180deg); /* Rotate on flip */
-}
-
-/* Front and Back Faces */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -119,62 +104,29 @@
     height: 100%;
     backface-visibility: hidden; /* Hide the back side when not flipped */
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    /* padding: 1em; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
-/* Front Side of the Card */
+/* Front Side */
 .flip-card-front {
-    /* background-image: url('../../public/images/1.jpg');  */
+    background-color: #bbb;
     background-size: cover;
     background-position: center;
 }
 
-/* Back Side of the Card */
+/* Back Side */
 .flip-card-back {
-    /* background-image: url('../../public/images/2.png');  */
-    background-position: center;
+    background-color: #F5EFFF;
     transform: rotateY(180deg); /* Rotate the back to start hidden */
 }
 
-/* Optional styling for text on cards */
-.flip-card-front h3,
-.flip-card-back h3 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5em;
-    margin-top:3%;
-    margin-bottom: 2.5%;
-    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
-}
-
-.flip-card-front p,
-.flip-card-back p {
-    font-size: 1em;
-    margin-top: 1em;
-    text-align: left;
-    padding:0 3em;
-    /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
-}
-
-.flip-card-title {
-    font-family: "Josefin Sans", sans-serif;
-  text-align: center; /* Center the title */
-  font-size: 1.7em; /* Adjust the size as needed */
-  margin-bottom: 2%; /* Space between title and card */
-  color: #EBD3F8; /* Match this to your color theme */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Rotate on hover */
-}
-
-.flip-card-back {
-    transform: rotateY(180deg); /* Rotate the back to start hidden */
+.flip-card-inner.flipped {
+    transform: rotateY(180deg); /* Rotate on flip */
 }
 
 /* Smoother transition for the flip */
@@ -182,15 +134,32 @@
     transition: transform 0.8s ease-in-out; /* Increase duration and apply easing */
 }
 
-/* Add smooth transitions for other properties like opacity */
-.flip-card-front, .flip-card-back {
-    transition: opacity 0.8s ease-in-out; /* Smooth transition for opacity changes */
+.flip-card-back {
+    transform: rotateY(180deg); /* Rotate the back to start hidden */
+}
+
+
+/* Optional styling for text on cards */
+.flip-card-front h3, .flip-card-back h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+}
+
+.flip-card-title {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 2%;
+    color: #EBD3F8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     margin-top: 0em;
 }
 
@@ -202,30 +171,91 @@
 }
 
 .person-card img {
-    width: 77%; /* Adjust width of the images */
-    height: 62%; /* Adjust height of the images */
-    border-radius: 20%; /* Makes the images circular */
-    object-fit:fill; /* Ensures the image covers the area */
+    width: 77%;
+    height: 62%;
+    border-radius: 20%;
+    object-fit: fill;
     margin-bottom: 4%;
-
 }
 
 .person-card p {
     font-size: 0.85em;
     font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-weight: 600;
     text-align: center;
     color: #2E073F;
     justify-content: center;
-    margin: 0; /* Ensure no additional margin */
+    margin: 0;
 }
 
-.p-head{
-        font-family: "Manrope", sans-serif;
-        /* font-optical-sizing: auto; */
-        font-weight: 1000;
+.p-head {
+    font-family: "Manrope", sans-serif;
+    font-weight: 1000;
     font-size: 1.1em;
-    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
+}
+
+/* Media query for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .fellowship-main{
+        /* height: 255%; */
+    }
+    /* Adjust the flip-card container layout */
+    .flip-card-container {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-rows: repeat(11,1fr); /* Auto rows to adjust to content */
+        gap: 3%; /* Slightly larger gap between cards for mobile */
+        padding-left: 8%; /* Reduce padding */
+        padding-right: 8%;
+        /* padding-bottom: 5%;; */
+    }
+
+    /* Flip card adjustments for mobile */
+    .flip-card {
+        height: 220px; /* Further reduce height for better mobile fit */
+    }
+
+    /* Responsive adjustments for card front and back */
+    .flip-card-front,
+    .flip-card-back {
+        padding: 0.5em; /* Adjust padding for both front and back */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust the people grid layout */
+    .people-grid {
+        grid-template-columns: -1fr 1fr; /* 2 columns for mobile */
+        gap: 8px; /* Smaller gap between people cards */
+    }
+
+    /* Person card (image and text) adjustments */
+    .person-card img {
+        width: 65%; /* Make images smaller for a better fit */
+        height: 65%; /* Maintain aspect ratio */
+        border-radius: 15%; /* Adjust the border radius */
+        margin-bottom: 6%; /* Adjust margin below images */
+    }
+
+    .person-card p {
+        font-size: 0.7em; /* Smaller font size for person names */
+        margin-top: 3%; /* Small top margin to space out text from image */
+    }
+
+    /* Title adjustments for mobile */
+    .flip-card-title {
+        font-size: 1.2em; /* Smaller font for titles */
+        margin-bottom: 3%; /* Adjust margin below title */
+    }
+
+    /* Adjust h3 heading inside the flipped cards */
+    .flip-card-back h3 {
+        font-size: 1.1em; /* Slightly smaller for mobile */
+        margin-bottom: 5%; /* More space below heading */
+    }
+
+    /* Adjust padding for text content inside the cards */
+    .flip-card-back p {
+        padding: 0 0.8em; /* Slightly reduce side padding */
+        font-size: 0.75em; /* Slightly smaller font size for mobile */
+    }
 }
