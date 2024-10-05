@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem; /* Add padding for small devices */
 }
 
 .constructionHeader h1,
@@ -20,9 +21,10 @@ body {
     -webkit-background-clip: text; /* For Safari */
     -webkit-text-fill-color: transparent; /* For Safari */
     color: transparent; /* Fallback for other browsers */
-    text-align: center; /* Center align text */;
+    text-align: center;
 }
 
+/* Header Font Sizes */
 .constructionHeader h1 {
     font-size: 3rem;
 }
@@ -31,8 +33,35 @@ body {
     font-size: 2rem;
 }
 
+/* Highlight Styling */
 #highlight {
     background: linear-gradient(to right, #FF7F50, #FF1493);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .constructionPageWrapper {
+        /* height: auto;  */
+        padding: 2rem; /* Increased padding for mobile */
+    }
+
+    .constructionHeader h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .constructionHeader h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .constructionHeader h1 {
+        font-size: 2rem; /* Further decrease for very small screens */
+    }
+
+    .constructionHeader h2 {
+        font-size: 1.2rem; /* Further decrease for very small screens */
+    }
 }

@@ -10,8 +10,7 @@
 /* Container for the entire media page */
 .media-container {
   min-height: 150vh; /* Ensures it covers the full viewport height */
-    background: linear-gradient(to right, #1A1A1A, #4B0082);
-  /* padding: 50px; */
+  background: linear-gradient(to right, #1A1A1A, #4B0082);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,7 +50,7 @@
 /* Gallery grid layout */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
   gap: 30px; /* Space between grid items */
   width: 100%; /* Take up full width of the container */
   max-width: 1200px; /* Limit the grid's width to a max value */
@@ -100,20 +99,56 @@
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .mediaHeader h1 {
+    font-size: 2.5rem; /* Smaller heading */
+  }
+
+  .mediaHeader h2 {
+    font-size: 1.5rem; /* Smaller subheading */
+  }
+
   .gallery-grid {
+    padding: 10%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
   }
 
   .gallery-image {
-    height: 180px;
+    height: 180px; /* Adjust height for images */
   }
 
   .gallery-title {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Smaller title font */
   }
 
   .gallery-description {
-    font-size: 0.9em;
+    font-size: 0.9em; /* Smaller description font */
+  }
+}
+
+@media (max-width: 480px) {
+  .mediaHeader h1 {
+    font-size: 2rem; /* Even smaller heading */
+  }
+
+  .mediaHeader h2 {
+    font-size: 1.3rem;
+    padding: 5%; /* Even smaller subheading */
+  }
+
+  .gallery-image {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .gallery-title {
+    font-size: 1em; /* Smaller title font */
+  }
+
+  .gallery-description {
+    font-size: 0.8em; /* Smaller description font */
+  }
+
+  .gallery-grid {
+    gap: 40px; /* Reduce gap between items for smaller screens */
   }
 }
 

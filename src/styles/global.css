@@ -14,6 +14,9 @@ body {
     flex-direction: column;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 
 .container {
@@ -36,7 +39,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 95%;
+    width: 100%;
     background-color: transparent;
     color: rgb(0, 0, 0); 
     z-index: 10; 
@@ -152,21 +155,110 @@ main {
 .nav-links.open {
     right: 0; /* Slide in the panel */
 }
+/* MEDIA QUERIES FOR MOBILE SCREEN */
 
-/* Hide regular navigation for mobile screens and show hamburger */
+/* Styles only for screens 768px and below */
 @media (max-width: 768px) {
-    header nav ul {
-        display: none; /* Hide the standard navbar */
+    /* Hide the regular navigation and show the hamburger icon on mobile */
+    nav {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .hamburger {
-        display: block; /* Show hamburger icon */
+    .nav-menu {
+        display: none; /* Hide the full navigation */
     }
-}
+    /* Hamburger icon styling */
+    .hamburger-icon {
+        display: flex; /* Show the hamburger icon */
+        flex-direction: column;
+        align-items: flex-end;
+        cursor: pointer;
+        z-index: 11; /* Ensure it sits above the nav */
+        padding: 5%;
+        position: relative; /* Added to ensure position stacking */
+    }
 
-/* Hide the side panel on larger screens */
-@media (min-width: 768px) {
-    .nav-links {
+    .hamburger-icon .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px;
+        transition: 0.3s;
+        position: relative; /* Make sure lines are positioned correctly */
+        z-index: 12; /* Ensure the lines are above other content */
+    }
+
+    /* Fullscreen mobile navigation */
+    .nav-menu.open {
+        display: flex; /* Show the menu when hamburger is clicked */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Adjust to 100% for better fit */
+        height: 100vh; /* Full height of the viewport */
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 10;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-menu.open ul {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-menu.open ul li {
+        margin: 1.5em 0;
+    }
+
+    .nav-menu.open ul li a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Hide regular list items on mobile */
+    nav ul li {
         display: none;
     }
+    /* Responsive Navbar Styles */
+.responsive-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between hamburger and heading */
+    padding: 1em; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Background color */
+    color: white; /* Text color */
+}
+
+.navbar-heading {
+    flex: 1; /* Allows the heading to take up remaining space */
+    text-align: center; /* Center align the heading */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+/* Hamburger icon styles can remain the same */
+.hamburger-icon {
+    display: flex; /* Show the hamburger icon */
+    flex-direction: column;
+    align-items: flex-end; /* Align to the right */
+    cursor: pointer;
+    z-index: 11; /* Ensure it sits above the nav */
+    padding: 5%;
+}
+
+/* Existing styles */
+.hamburger-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.3s;
+}
+
 }

@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-body {
+body,h1 {
     font-family: "Josefin Sans", sans-serif;
 }
 
 /* Background Gradient for the entire page */
 .paymentsPageWrapper {
-    height: 117vh; /* Ensure it covers the full viewport height */
+    height: 113vh; /* Ensure it covers the full viewport height */
     background: linear-gradient(to right, #1A1A1A, #4B0082);
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +17,6 @@ body {
 /* Gradient for h1 and h2 */
 .paymentsHeader h1, 
 .paymentsHeader h2 {
-    /* background: linear-gradient(to right, #FF7F50, #FF1493); */
     background: linear-gradient(to right, #C8A1E0, #F5EFFF);
     -webkit-background-clip: text; /* For Safari */
     -webkit-text-fill-color: transparent; /* For Safari */
@@ -34,7 +32,6 @@ body {
 
 h1 {
     font-size: 3rem;
-    font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
@@ -46,29 +43,19 @@ h2 {
     display: flex;
     margin: 3rem;
     justify-content: space-around;
-    /* background: linear-gradient(to right, #FF7F50, #FF1493); */
     border-radius: 3rem;
     padding: 2rem; /* Add padding for better spacing */
     flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    width: 80rem;
+    max-width: 80rem; /* Maximum width for better layout */
+    width: 100%; /* Ensures it fits the container */
+    box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.bankSection {
+.bankSection, .qrCodeSection {
     flex: 1; /* Allow both sections to grow equally */
     margin: 1rem; /* Add margin for spacing */
-    min-width: 30rem; /* Minimum width for responsiveness */
-    max-width: 40rem; /* Maximum width for better layout */
-    background: white; /* Background for better contrast */
-    border-radius: 1rem; /* Rounded corners */
-    padding: 1rem; /* Padding inside the sections */
-    text-align: center;
-}
-
-.qrCodeSection {
-    flex: 1; /* Allow both sections to grow equally */
-    margin: 1rem; /* Add margin for spacing */
-    min-width: 30rem; /* Minimum width for responsiveness */
-    max-width: 40rem; /* Maximum width for better layout */
+    min-width: 25rem; /* Minimum width for responsiveness */
+    max-width: 35rem; /* Maximum width for better layout */
     background: white; /* Background for better contrast */
     border-radius: 1rem; /* Rounded corners */
     padding: 1rem; /* Padding inside the sections */
@@ -83,4 +70,71 @@ h3 {
 
 .bankSection p {
     font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .paymentsPageWrapper{
+        height: 87vh;
+    }
+    .paymentsBody {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center; /* Center align items */
+        margin: 1rem; /* Adjust margin for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Full width for sections on small screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.8rem; /* Adjust font size for h3 on smaller screens */
+    }
+
+    .bankSection p {
+        font-size: 1.2rem; /* Adjust font size for p in bank section */
+    }
+
+    .bankSection,
+    .qrCodeSection {
+        width: 90%; /* Full width for sections on small screens */
+        max-width: none;
+        margin: 2%; /* Remove max-width restriction */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Further decrease for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Further decrease for very small screens */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Further decrease for h3 */
+    }
+
+    .bankSection p {
+        font-size: 1rem; /* Further decrease for p in bank section */
+    }
+
+    .paymentsBody {
+        margin: 1rem; /* Adjust margin for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Full width for sections on small screens */
+    }
+
+    .bankSection,
+    .qrCodeSection {
+        /* width: 100%; Full width for sections on small screens */
+        max-width: none; /* Remove max-width restriction */
+    }
 }

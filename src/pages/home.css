@@ -84,6 +84,10 @@ video {
     .welcome-message p {
         font-size: 1rem;
     }
+    .welcome-message{
+        padding: 5%;
+        /* margin-bottom: 10%; */
+    }
 }
 
 /* For very small mobile devices */
