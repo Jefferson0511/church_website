@@ -19,6 +19,7 @@ function App() {
         <Header /> {/* This contains the responsive navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/st-matthews-main" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/pastorsdesk" element={<Pastorsdesk />} />
           <Route path="/construction" element={<Construction />} />
