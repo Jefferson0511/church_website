@@ -10,7 +10,7 @@ const Fellowship = () => {
       title: "Women's Fellowship", // New title property
       front: "Front Content 1",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/wf.jpg",
       backImage: "/images/1.jpg",
       president: "President- Mrs. Sheeba Salomon",
       seceretary: "Secretary: Mrs.G.Angel Nesan",
@@ -25,75 +25,105 @@ const Fellowship = () => {
       title: "Men's Fellowship",
       front: "Front Content 2",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/mf.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman- Rev.S.Salomon Soundara Dass",
       seceretary: "In charges- Mr.P.Asvinkumar and Mr.D.Rajkumar Davidson",
       people: [
         { name: "Secretary: J.Samson Kirubakaran", image: "/images/m1.jpg" },
-        { name: "Treasurer: A.B. Johnson Thiruvengadam", image: "/images/m2.jpg" },
+        {
+          name: "Treasurer: A.B. Johnson Thiruvengadam",
+          image: "/images/m2.jpg",
+        },
       ],
     },
     {
       title: "Sunday School",
       front: "Front Content 3",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/sc.jpg",
       backImage: "/images/1.jpg",
       people: [
-        { name: "Samson", image: "/images/m1.jpg" },
-        { name: "Johnson", image: "/images/m2.jpg" },
+        {
+          name: "Sundar Singh",
+          image: "/images/sunday_school/sundar_singh.jpg",
+        },
+        {
+          name: "ABC",
+          image: "/images/sunday_school/uk.jpg",
+        },
+        {
+          name: "Preetha",
+          image: "/images/sunday_school/Preetha.jpg",
+        },
+        {
+          name: "Praveen",
+          image: "/images/sunday_school/Praveen.jpg",
+        },
+        { name: "Steffi", image: "/images/sunday_school/Steffi.jpg" },
+        {
+          name: "Edwina",
+          image: "/images/sunday_school/Edwina.jpg",
+        },
+        {
+          name: "Annie",
+          image: "/images/sunday_school/Annie.jpg",
+        },
       ],
     },
     {
       title: "Youth Fellowship",
       front: "Front Content 4",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/yf.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "Boys : Presbyter In-charge",
       treasurer: "Girls : Iyyar Amma",
       people: [
-        { name: "Youth Leader: Dr. Devasitham", image: "/images/y1.jpg" },
-        { name: "Secretary: J.Jeya Rueben", image: "/images/y1.jpg" },
-        { name: "Treasurer: Daphne", image: "/images/y1.jpg" },
+        { name: "Youth Leader: Dr. Devasitham", image: "/images/deva_anna.jpg" },
+        { name: "Secretary: J.Jeya Rueben", image: "/images/y2.jpg" },
+        { name: "Treasurer: Daphne", image: "/images/y3.jpg" },
       ],
     },
     {
       title: "Tamil Choir",
       front: "Front Content 5",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/tc.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "Mr.A.Wesley John - Tamil Choir Admin",
-      people: [{ name: "Wesley John", image: "/images/t1.jpg" }],
+      people: [{ name: "" }, { name: "Wesley John", image: "/images/t1.jpg" }],
     },
     {
       title: "English Choir",
       front: "Front Content 6",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/ec.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "In Charge - Dr.J.Reeves Wesley",
+      people: [
+        { name: "", image: "" },
+        { name: "Reeves", image: "/images/ec1.png" },
+      ],
     },
 
-    {
-      title: "Evangelism",
-      front: "Front Content 6",
-      back: "Incharges",
-      frontImage: "/images/1.jpg",
-      backImage: "/images/1.jpg",
-      president: "Chairman - Rev.S.Salomon Soundara Dass",
-      seceretary: "In Charge - Dr.J.Reeves Wesley",
-    },
+    // {
+    //   title: "Evangelism",
+    //   front: "Front Content 6",
+    //   back: "Incharges",
+    //   frontImage: "/images/1.jpg",
+    //   backImage: "/images/1.jpg",
+    //   president: "Chairman - Rev.S.Salomon Soundara Dass",
+    //   seceretary: "In Charge - Dr.J.Reeves Wesley",
+    // },
     {
       title: "Elder's Fellowship",
       front: "Front Content 6",
       back: "Incharges",
-      frontImage: "/images/1.jpg",
+      frontImage: "/images/ef.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "In Charge - Dr.J.Reeves Wesley",
@@ -110,16 +140,18 @@ const Fellowship = () => {
       {/* <div className="fellowship-overlay"></div> */}
       <div className="fellowship-welcome-message">
         <h1>Fellowship</h1>
-        <h2>who has called you into <span id="highlight">fellowship</span> with his Son</h2>
+        <h2>
+          who has called you into <span id="highlight">fellowship</span> with
+          his Son
+        </h2>
         <p>
-          Write up about fellowshipsWrite up about fellowshipsWrite up about
-          fellowships Write up about fellowships Write up about fellowships
-          Write up about fellowships Write up about fellowships Write up about
-          fellowships Write up about fellowships Write up about fellowships
-          Write up about fellowships Write up about fellowships Write up about
-          fellowships Write up about fellowships Write up about fellowships
-          Write up about fellowships Write up about fellowships Write up about
-          fellowships
+          Church fellowships are vibrant communities within the congregation,
+          each catering to specific groups such as men, women, youth, children,
+          and seniors. They provide opportunities for spiritual growth, support,
+          and service through activities like Bible studies, prayer meetings,
+          and outreach programs. Fellowships foster unity, deepen faith, and
+          encourage discipleship, helping members connect with one another and
+          serve God collectively.
         </p>
       </div>
       <div className="flip-card-container">
@@ -143,17 +175,20 @@ const Fellowship = () => {
                 style={{ backgroundColor: "#F5EFFF" }}
               >
                 <h3>{card.back}</h3>
-                <div className="people-grid">
+                <div
+                  className={`people-grid ${
+                    card.title === "Sunday School" ? "sunday-school-grid" : ""
+                  }`}
+                >
                   {card.people &&
                     card.people.map((person, i) => (
                       <div key={i} className="person-card">
-                        <img src={person.image} alt={person.name} />
+                        {person.image && (
+                          <img src={person.image} alt={person.name} />
+                        )}
                         <p>
-                          <b className="p-head">
-                            {person.name.split(": ")[0]}
-                          </b>
-                        </p>{" "}
-                        {/* Title in bold */}
+                          <b className="p-head">{person.name.split(": ")[0]}</b>
+                        </p>
                         <p>{person.name.split(": ")[1]}</p>
                       </div>
                     ))}

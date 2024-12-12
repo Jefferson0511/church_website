@@ -4,37 +4,55 @@ import "./media.css"; // Separate CSS file for Media
 const Media = () => {
   const galleryData = [
     {
-      title: "Church Anniversary",
+      title: "Sunday School Christmas Program",
       description:
         "Celebrating our church's 50th anniversary with joy and gratitude.",
-      image: "/images/media/c1.jpg",
+      image: "/images/media_p/christmas.jpg",
     },
     {
-      title: "Youth Retreat 2024",
+      title: "Children's Sunday",
       description:
         "A wonderful time of spiritual growth and fellowship for our youth.",
-      image: "/images/media/c2.png",
+      image: "/images/media_p/children.jpg",
     },
     {
-      title: "Christmas Celebration",
+      title: "NMSI YOUTH FEST-OVERALL RUNNER UP",
       description:
         "Joyful Christmas celebrations with carols and a beautiful nativity play.",
       image: "/images/media/c3.png",
     },
     {
-      title: "Baptism Service",
+      title: "YOUTH RETREAT ON LEADERSHIP",
       description:
         "A special service where new believers were baptized into the faith.",
-      image: "/images/media/c4.png",
+      image: "/images/media_p/youth_retreat.jpg",
     },
     {
-      title: "Community Outreach",
+      title: "CHOIR SUNDAY",
       description:
         "Serving our community through charity events and outreach programs.",
-      image: "/images/media/c5.png",
+      image: "/images/media_P/CHOIR.jpg",
     },
     {
-      title: "Easter Service",
+      title: "VBS",
+      description:
+        "A celebration of the resurrection with a sunrise service and worship.",
+      image: "/images/media/c6.png",
+    },
+    {
+      title: "VBS",
+      description:
+        "A celebration of the resurrection with a sunrise service and worship.",
+      image: "/images/media/c6.png",
+    },
+    {
+      title: "VBS",
+      description:
+        "A celebration of the resurrection with a sunrise service and worship.",
+      image: "/images/media/c6.png",
+    },
+    {
+      title: "VBS",
       description:
         "A celebration of the resurrection with a sunrise service and worship.",
       image: "/images/media/c6.png",

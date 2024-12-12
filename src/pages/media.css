@@ -9,7 +9,7 @@
 
 /* Container for the entire media page */
 .media-container {
-  min-height: 150vh; /* Ensures it covers the full viewport height */
+  min-height: 200vh; /* Ensures it covers the full viewport height */
   background: linear-gradient(to right, #1A1A1A, #4B0082);
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@
 /* Gallery grid layout */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
   gap: 30px; /* Space between grid items */
   width: 100%; /* Take up full width of the container */
   max-width: 1200px; /* Limit the grid's width to a max value */
@@ -81,7 +81,7 @@
 
 /* Information under each image */
 .gallery-info {
-  padding: 20px;
+  padding: 5%;
   text-align: center;
 }
 
@@ -89,6 +89,7 @@
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 10px;
   color: #5a3e95;
 }
 
