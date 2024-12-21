@@ -15,6 +15,21 @@ const ConstructionPage = () => {
     "/images/construction/9.JPG",
     "/images/construction/10.JPG",
     "/images/construction/11.JPG",
+    "/images/construction/12.JPG",
+    "/images/construction/13.JPG",
+    "/images/construction/14.JPG",
+    "/images/construction/15.JPG",
+    "/images/construction/16.JPG",
+    "/images/construction/17.JPG",
+    "/images/construction/18.JPG",
+    "/images/construction/19.JPG",
+    "/images/construction/20.JPG",
+    "/images/construction/21.JPG",
+    "/images/construction/22.JPG",
+    "/images/construction/23.JPG",
+    "/images/construction/24.JPG",
+    "/images/construction/25.JPG",
+    "/images/construction/26.JPG",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
