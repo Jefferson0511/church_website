@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./home.css"; // Separate CSS for Home
 import videoBg from '../assets/3.mp4'
+import Footer from "../components/footer";
 
 const bibleVerses = [
   "John 3:16 - For God so loved the world...",
@@ -21,22 +22,25 @@ const Home = () => {
     return () => clearInterval(verseInterval);
   }, []);
   return (
-    <main className="home-main">
-      <div className="overlay"></div>
-      <video src={videoBg} autoPlay loop muted />
-      <div className="welcome-message">
-        <h1>CSI St. Matthew's Church</h1>
-        <p>
-          "The Lord is a refuge for the oppressed, a stronghold in times of
-          trouble" 
-          <br />
-          - Psalm 9:9
-        </p>
-      </div>
-      {/* <div className="verse-strip">
-        <p>{bibleVerses[currentVerse]}</p>
-      </div> */}
-    </main>
+    <>
+      <main className="home-main">
+        <div className="overlay"></div>
+        <video src={videoBg} autoPlay loop muted />
+        <div className="welcome-message">
+          <h1>CSI St. Matthew's Church</h1>
+          <p>
+            "The Lord is a refuge for the oppressed, a stronghold in times of
+            trouble" 
+            <br />
+            - Psalm 9:9
+          </p>
+        </div>
+        {/* <div className="verse-strip">
+          <p>{bibleVerses[currentVerse]}</p>
+        </div> */}
+      </main>
+      <Footer />
+    </>
   );
 };
 

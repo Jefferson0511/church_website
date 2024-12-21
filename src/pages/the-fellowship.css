@@ -2,15 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+.fellowship-container {
+  min-height: 100vh;
+  position: relative;
+
+  background: linear-gradient(to right, #1A1A1A, #4B0082);
+}
+
 .fellowship-main {
-    position: relative;
-    height: 92.3vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background: linear-gradient(to right, #1A1A1A, #4B0082);
-    z-index: 1;
+  padding-bottom: 60px;
+  width: 100%;
+  margin: 0;
+  padding-top: 1rem;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
 #highlight {
@@ -123,6 +128,11 @@
 .flip-card-back {
     background-color: #F5EFFF;
     transform: rotateY(180deg); /* Rotate the back to start hidden */
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .flip-card-inner.flipped {
@@ -134,10 +144,137 @@
     transition: transform 0.8s ease-in-out; /* Increase duration and apply easing */
 }
 
-.flip-card-back {
-    transform: rotateY(180deg); /* Rotate the back to start hidden */
+.flip-card-back h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    margin: 0 0 0.3rem 0;
+    color: #2E073F;
 }
 
+/* People Grid Styles */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem;
+    width: 100%;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.womens-fellowship-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.sunday-school-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+/* Person Card Styles */
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    gap: 0.2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.person-card img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.person-card p {
+    font-size: 0.6rem;
+    line-height: 1;
+    margin: 0;
+    color: #2E073F;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+.p-head {
+    font-weight: 700;
+    font-size: 0.65rem;
+    color: #1a1a1a;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .flip-card-back {
+        padding: 0.4rem;
+    }
+
+    .flip-card-back h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .people-grid {
+        gap: 0.2rem;
+        padding: 0.15rem;
+    }
+
+    .person-card {
+        padding: 0.15rem;
+        gap: 0.15rem;
+    }
+
+    .person-card img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .person-card p {
+        font-size: 0.55rem;
+    }
+
+    .p-head {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flip-card-back {
+        padding: 0.3rem;
+    }
+
+    .flip-card-back h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .people-grid {
+        gap: 0.15rem;
+        padding: 0.1rem;
+    }
+
+    .person-card {
+        padding: 0.1rem;
+        gap: 0.1rem;
+    }
+
+    .person-card img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .person-card p {
+        font-size: 0.5rem;
+    }
+
+    .p-head {
+        font-size: 0.55rem;
+    }
+}
 
 /* Optional styling for text on cards */
 .flip-card-front h3, .flip-card-back h3 {
@@ -155,6 +292,23 @@
     color: #EBD3F8;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+.people-grid.womens-fellowship-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+    gap: 0.1rem; /* Space between grid items */
+    justify-items: center; /* Center the content */
+    align-items: center;
+}
+
+.people-grid.womens-fellowship-grid img {
+    width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+
 .sunday-school-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr) !important; /* Change to 4 columns */
@@ -187,7 +341,7 @@
     /* Additional styling to adjust layout for Sunday School with many incharges */
     .sunday-school-grid {
     grid-template-columns: repeat(4, 1fr); /* Adjust grid to have 4 columns */
-    grid-auto-rows: 130px; /* Fixed height for rows */
+    grid-auto-rows: 100px; /* Fixed height for rows */
     }
 
     .sunday-school-grid .person-card {
@@ -204,7 +358,7 @@
 .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 0px;
+    row-gap: 30px;
     column-gap: 42px;
     margin-top: 0em;
 }
@@ -309,6 +463,61 @@
 /* Adjust grid for Sunday School with smaller size */
     
     /* Person card styles for both grids */
-    
+    .womens-fellowship-grid,
+    .sunday-school-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
 
+    .womens-fellowship-grid .person-card,
+    .sunday-school-grid .person-card {
+        padding: 0.3rem;
+    }
+
+    .womens-fellowship-grid .person-card img,
+    .sunday-school-grid .person-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .womens-fellowship-grid .person-card p,
+    .sunday-school-grid .person-card p {
+        font-size: 0.65rem;
+        line-height: 1.2;
+    }
+
+    .womens-fellowship-grid .p-head,
+    .sunday-school-grid .p-head {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .womens-fellowship-grid,
+    .sunday-school-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem;
+    }
+
+    .womens-fellowship-grid .person-card,
+    .sunday-school-grid .person-card {
+        padding: 0.25rem;
+    }
+
+    .womens-fellowship-grid .person-card img,
+    .sunday-school-grid .person-card img {
+        width: 50px;
+        height: 55px;
+    }
+
+    .womens-fellowship-grid .person-card p,
+    .sunday-school-grid .person-card p {
+        font-size: 0.6rem;
+        line-height: 1.1;
+    }
+
+    .womens-fellowship-grid .p-head,
+    .sunday-school-grid .p-head {
+        font-size: 0.65rem;
+    }
 }
