@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jefferson0511.github.io/church/",
+  "homepage": "https://csi-st-matthews.github.io/church",
   "name": "church",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.1.1"
   }
 }
