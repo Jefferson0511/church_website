@@ -334,7 +334,7 @@
 
     /* Adjust the text style inside person cards */
     .sunday-school-grid .person-card p {
-    font-size: 0.8em; /* Make text smaller */
+    font-size: 0.55em; /* Make text smaller */
     margin-top: 5px; /* Space between the image and text */
     }
 

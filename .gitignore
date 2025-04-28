@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Large files
-src/assets/*.mp4
-public/images/construction/*.MP4
-*.mp4
-*.MP4
+# src/assets/*.mp4
+# public/images/construction/*.MP4
+# *.mp4
+# *.MP4

@@ -4,26 +4,35 @@ import "./aboutus.css";
 
 const AboutUs = () => {
   const pcMembers = [
-    { name: "Mr. N.G.R Christopher Selvaraj", role: "Secretary", image: "images/pc/ngr.jpg" },
-    { name: "Mr C. Susikar Moses", role: "Treasurer", image: "images/pc/susikar.jpg" },
+    // { name: "Rev S Suresh Thilak kumar", role: "Chairman", image: "images/pc/tilak.jpg" },
+    { name: "Rev. S. Salomon Soundara Dass", role: "Chairman & \n Presbyter in-charge", image: "images/pc/pastor1.jpg" },
+    { name: "Mr. N.G.R Christopher Selvaraj", role: "Hon. Secretary", image: "images/pc/ngr.jpg" },
+    { name: "Mr C. Susikar Moses", role: "Hon. Treasurer", image: "images/pc/susikar.jpg" },
     { name: "Mr. K. Devaraj", role: "", image: "images/pc/devaraj.jpg" },
-    { name: "Mr. Vinoth", role: "", image: "images/pc/vinoth.jpg" },
-    { name: "Mr. Sathyaraj", role: "", image: "images/pc/sathyaraj.jpg" },
-    { name: "Mr. Wesley John", role: "", image: "images/pc/wesley.jpg" },
-    { name: "Mr. Alex Gladson", role: "", image: "images/pc/alex.jpg" },
-    { name: "Mrs. Shirley Mathanraj", role: "", image: "images/pc/shirley.png" },
+    { name: "Mr. Y. Sathyaraj", role: "", image: "images/pc/sathyaraj.jpg" },
+    { name: "Mr. A. Wesley John", role: "", image: "images/pc/wesley.jpg" },
+    { name: "Mr. D. Sundar Raj", role: "", image: "images/pc/sundar.jpg" },
+    { name: "Mr. R. Vinod Kumar", role: "", image: "images/pc/vinoth.jpg" },
+    {name:"Mr. K. Vijay",role:"",image:"images/pc/vijay.jpg"},
+    {name:"To be added",role:"",image:"images/pc/beula1.jpg"},
     { name: "Mrs. Victoria Kirubagaram", role: "", image: "images/pc/victoria.jpg" },
+    { name: "Mrs. Chandra Rose Lily", role: "", image: "images/pc/chandra.png" },
+    {name:"Mrs. R. Anna Pushpam",role:"",image:"images/pc/annapushpam.jpg"},
+    { name: "Mrs. Shirley Mathan Raj", role: "", image: "images/pc/shirley.png" },
+    { name: "Mr. C. Alex Gladson", role: "", image: "images/pc/alex.jpg" },
     { name: "Mrs. J. Olivia Merlyn ", role: "", image: "images/pc/olivia.jpg" },
     { name: "Miss P. Kezia Shirley Caroline", role: "", image: "images/pc/kezia.jpg" },
-    { name: "Mrs. Chandra Rose Lily", role: "", image: "images/pc/chandra.PNG" },
-    { name: "Member 13", role: "Role 13", image: "images/members/member13.jpg" },
-    { name: "Member 14", role: "Role 14", image: "images/members/member14.jpg" },
-    { name: "Member 15", role: "Role 15", image: "images/members/member15.jpg" },
-    { name: "Member 16", role: "Role 16", image: "images/members/member16.jpg" },
-    { name: "Member 17", role: "Role 17", image: "images/members/member17.jpg" },
-    { name: "Member 18", role: "Role 18", image: "images/members/member18.jpg" },
+    {name:"Mrs. B. Beaula",role:"",image:"images/pc/beula.jpg"},
+    {name:"To be added",role:"",image:"images/pc/beula1.jpg"},
+    // {name:"Mr. Samuel",role:"Sexton",image:"images/pc/sam.jpg"}
   ];
-
+  const officeMembers = [
+    { name: "Rev. S. Salomon Soundara Dass", role: "Chairman &\nPresbyter in-charge", image: "images/office/pastor1.jpg" },
+    { name: "Mr. P D Thomas", role: "Cup Bearer", image: "images/office/pdthomas.jpg" },
+    { name: "Mr. R Pushparaj", role: "Cup Bearer", image: "images/office/pushparaj1.jpg" },
+    { name: "Mr. Y R Paul Ephraim", role: "Clerk", image: "images/office/paul.jpg" },
+    { name: "Mr. M Samuel", role: "Sexton", image: "images/office/sam.jpg" },
+  ];
   return (
     <>
       <main className="about-main">
@@ -57,6 +66,18 @@ const AboutUs = () => {
                 <p>{member.role}</p>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="pc-members">
+          <h2>Church Office</h2>
+          <div className="grid-container">
+            {officeMembers.map((member, index) => (
+                <div key={index} className="member">
+                  <img src={member.image} alt={member.name} />
+                  <h3>{member.name}</h3>
+                  <p>{member.role}</p>
+                </div>
+              ))}
           </div>
         </div>
       </main>

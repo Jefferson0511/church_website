@@ -31,6 +31,16 @@
     color: transparent; /* Fallback for other browsers */
     text-align: center; /* Center align text */
     font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+.head h4{
+    background: linear-gradient(to right, #C8A1E0, #F5EFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for other browsers */
+    text-align: center; /* Center align text */
+    font-size: 1.5rem;
+    margin: 0rem;
 }
 
 #highlight {
@@ -50,13 +60,21 @@
 }
 
 .pastorPhoto {
-    flex: 1; /* Allow both sections to grow equally */
-    margin: 1rem; /* Add margin for spacing */
-    min-width: 10rem; /* Minimum width for responsiveness */
-    max-width: 20rem; /* Maximum width for better layout */
-    border-radius: 1rem; /* Rounded corners */
-    padding: 1rem; /* Padding inside the sections */
+    flex: 1;
+    margin: 1rem;
+    min-width: 45%;
+    max-width: 45%;
+    height: 80vh;
+    border-radius: 1rem;
     text-align: center;
+    overflow: hidden;
+}
+
+.pastorPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 .pastorMessage {

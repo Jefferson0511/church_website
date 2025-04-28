@@ -17,10 +17,10 @@ const Fellowship = () => {
       seceretary: "Secretary: Mrs.G.Angel Nesan",
       treasurer: "Treasruer: Mrs.A.Angel Mary Ashok",
       people: [
-        { name: "Incharge: Mrs. Sheeba Solomon", image: "/images/w4.jpg" },
-        { name: "Secretary : Mrs. Chandra Samson", image: "/images/w2.jpeg" },
-        { name: "Treasurer: Mrs. Hilda Devaraj", image: "/images/w3.jpg" },
-        { name: "Convenor: Mrs. Ruth Gnana Deepa", image: "/images/w1.jpg" },
+        { name: "Mrs. Sheeba Solomon: President", image: "/images/w4.jpg" },
+        { name: " Mrs. Chandra Samson: Secretary", image: "/images/w2.jpeg" },
+        { name: "Mrs. Hilda Devaraj: Treasurer", image: "/images/w3.jpg" },
+        { name: "Mrs. Ruth Gnana Deepa: Convenor ", image: "/images/w1.jpg" },
       ],
     },
     {
@@ -32,44 +32,69 @@ const Fellowship = () => {
       president: "Chairman- Rev.S.Salomon Soundara Dass",
       seceretary: "In charges- Mr.P.Asvinkumar and Mr.D.Rajkumar Davidson",
       people: [
-        { name: "Secretary: Mr. J.Samson Kirubakaran", image: "/images/m1.jpg" },
+        { name: " Mr. J.Samson Kirubakaran: Secretary", image: "/images/m1.jpg" },
         {
-          name: "Treasurer: Mr. A.B. Johnson Thiruvengadam",
+          name: "Mr. A.B. Johnson Thiruvengadam: Treasurer ",
           image: "/images/m2.jpg",
         },
       ],
     },
     {
-      title: "Sunday School",
+      title: "Tamil Sunday School",
       front: "Front Content 3",
 
-      frontImage: "/images/sc.jpg",
+      frontImage: "/images/s1.jpg",
       backImage: "/images/1.jpg",
       people: [
         {
-          name: "Mr.Sundar ",
+          name: "Dr. S D Sundarsingh: Superintendent",
           image: "/images/sunday_school/sundar_singh.jpg",
         },
         {
-          name: "Mrs. Shiny",
-          image: "/images/sunday_school/uk.jpg",
+          name: "Mrs. D Vimala",
+          image: "/images/sunday_school/vimala.jpg",
         },
         {
-          name: "Mrs. Preetha",
-          image: "/images/sunday_school/Preetha.jpg",
+          name: "Mrs. A Shanthi Mary",
+          image: "/images/sunday_school/shanthi.jpg",
         },
         {
-          name: "Mr. Praveen",
+          name: "Mr. R Praveen",
           image: "/images/sunday_school/Praveen.jpg",
         },
         {
-          name: "Mrs. Edwina",
+          name: "Mrs. Annie Reshma",
+          image: "/images/sunday_school/Annie.jpg",
+        },
+        {
+          name: "Mrs. J Edwina Racheal",
           image: "/images/sunday_school/Edwina.jpg",
         },
         {
-          name: "Mrs. Annie",
-          image: "/images/sunday_school/Annie.jpg",
+          name: "Mrs. R Preetha",
+          image: "/images/sunday_school/Preetha.jpg",
         },
+        {
+          name: "Mrs. S Shiny Dorthy",
+          image: "/images/sunday_school/uk.jpg",
+        },
+      ],
+    },
+    {
+      title: "English Sunday School",
+      front: "Front Content 4",
+      back: "Incharges",
+      frontImage: "/images/s2.jpg",
+      backImage: "/images/1.jpg",
+      president: "Chairman - Rev.S.Salomon Soundara Dass",
+      seceretary: "Boys : Presbyter In-charge",
+      treasurer: "Girls : Iyyar Amma",
+      people: [
+        {
+          name: " Dr. S D Sundarsingh: Superintendent",
+          image: "/images/sunday_school/sundar_singh.jpg",
+        },
+        { name: " Mrs. Shirley Mathan Raj", image: "/images/sunday_school/shirley.png" },
       ],
     },
     {
@@ -83,17 +108,17 @@ const Fellowship = () => {
       treasurer: "Girls : Iyyar Amma",
       people: [
         {
-          name: "Youth Leader: Dr. Devasitham",
+          name: " Dr. Devasitham: Youth Leader",
           image: "/images/deva_anna.jpg",
         },
-        { name: "Secretary: Mr. Jeya Rueben", image: "/images/y2.jpg" },
+        { name: " Mr. Jeya Rueben: Secretary", image: "/images/y4.jpg" },
         { name: "Treasurer: Ms. Daphne", image: "/images/y3.jpg" },
       ],
     },
     {
       title: "Tamil Choir",
       front: "Front Content 5",
-      back: "Incharges",
+      back: "Incharge",
       frontImage: "/images/tc.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
@@ -103,14 +128,14 @@ const Fellowship = () => {
     {
       title: "English Choir",
       front: "Front Content 6",
-      back: "Incharges",
+      back: "Incharge",
       frontImage: "/images/ec.jpg",
       backImage: "/images/1.jpg",
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "In Charge - Dr.J.Reeves Wesley",
       people: [
         { name: "", image: "" },
-        { name: "Mr. Reeves Wesley", image: "/images/ec1.png" },
+        { name: "Dr. Reeves Wesley", image: "/images/ec1.png" },
       ],
     },
 
@@ -132,8 +157,8 @@ const Fellowship = () => {
       president: "Chairman - Rev.S.Salomon Soundara Dass",
       seceretary: "In Charge - Dr.J.Reeves Wesley",
       people: [
-        { name: "Secretary: Mr. D. Rajkumar Davidson", image: "/images/e1.jpg" },
-        { name: "Treasurer: Mr. S. Stephen Nicholas", image: "/images/e2.jpg" },
+        { name: "Mr. D. Rajkumar Davidson: Secretary ", image: "/images/e1.jpg" },
+        { name: "Mr. S. Stephen Nicholas: Treasurer", image: "/images/e2.jpg" },
       ],
     },
   ];
@@ -184,7 +209,7 @@ const Fellowship = () => {
                     className={`people-grid ${
                       card.title === "Women's Fellowship"
                         ? "womens-fellowship-grid"
-                        : card.title === "Sunday School"
+                        : card.title === "Tamil Sunday School"
                         ? "sunday-school-grid"
                         : ""
                     }`}

@@ -5,6 +5,12 @@ import "./media.css";
 const Media = () => {
   const galleryData = [
     {
+      title: "Annual Day 2024",
+      description:
+        "Pastor inaugrated the annual day 2024 with  prayer.",
+      image: "/images/media_p/annual_day.jpg",
+    },
+    {
       title: "Sunday School Christmas Program",
       description:
         "A joyful celebration where children share the Christmas story through songs and performances.",
