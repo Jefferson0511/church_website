@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/church_website/static/css/main.bb8e00e6.css",
+    "main.js": "/church_website/static/js/main.d94a8b0a.js",
+    "static/js/453.1ff2ac4d.chunk.js": "/church_website/static/js/453.1ff2ac4d.chunk.js",
+    "static/media/3.mp4": "/church_website/static/media/3.67f26852ea5d02b9156a.mp4",
+    "static/media/sampleQRCode.png": "/church_website/static/media/sampleQRCode.493d04b8679fb46ac89b.png",
+    "index.html": "/church_website/index.html",
+    "main.bb8e00e6.css.map": "/church_website/static/css/main.bb8e00e6.css.map",
+    "main.d94a8b0a.js.map": "/church_website/static/js/main.d94a8b0a.js.map",
+    "453.1ff2ac4d.chunk.js.map": "/church_website/static/js/453.1ff2ac4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb8e00e6.css",
+    "static/js/main.d94a8b0a.js"
+  ]
+}
